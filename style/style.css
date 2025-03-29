@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+:root{
+    --cor-verde: #49a09d;
+    --cor-lilas: #5f2c82;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+body{
+    background-color: var(--cor-lilas);
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vw;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #261233;
+}
+
+.img{
+    background: white url(../imagens/building.jpg) center center no-repeat;
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    height: 40vh;
+}
+
+.login{
+    padding: 20px;
+}
+
+main h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+main p{
+    margin-bottom: 10px;
+}
+
+.user, .pass{
+    text-align: center;
+    background-color: var(--cor-lilas);
+    border-radius: 3px;
+    margin: 2px;
+    padding: 3px;
+}
+
+#iconpessoa, #iconchave{
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    padding-right: 3px;
+}
+
+::-webkit-input-placeholder{
+    color: rgba(255, 255, 255, 0.445);
+}
+
+input{
+    border-radius: 3px;
+    font-size: 0.8em;
+    border: none;
+    outline: none;
+}
+
+input[type="email"], input[type="password"]{
+    background-color: #73aba9;
+    color: white;
+    padding: 5px;
+    width: 85%;
+}
+
+input[type="submit"]{
+    background-color: var(--cor-verde);
+    color: white;
+    margin: 10px auto 5px auto;
+    padding: 10px;
+    width: 100%;
+    font-size: 1em;
+}
+
+input[type="submit"]:hover{
+    background-color: #61a6a4;
+    cursor: pointer;
+}
+
+a{
+    display: block;
+    text-align: center;
+    background-color: white;
+    color: var(--cor-verde);
+    border: 1px solid var(--cor-verde);
+    padding: 10px;
+    border-radius: 3px;
+}
+
+a:hover{
+    color: #61a6a4;
+    border: 1px solid #61a6a4;
+}
+
+#iconemail{
+    color: var(--cor-verde);
+    vertical-align: middle;
+    padding-left: 5px;
+}
