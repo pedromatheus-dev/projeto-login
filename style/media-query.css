@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+
+/* 768px a 992px */
+/* acima de 992 */
+
+:root{
+    --cor-verde: #49a09d;
+    --cor-lilas: #5f2c82;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body{
+        background-image: linear-gradient(to top, var(--cor-verde), var(--cor-lilas));
+    }
+
+    section#login{
+        width: 80vw;
+        height: 350px;
+    }
+
+    #imagem{
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+
+    #formulario{
+        float: right;
+        width: 70%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 992px){
+    body{
+        background-image: linear-gradient(to top, var(--cor-verde), var(--cor-lilas));
+    }
+    
+    section#login{
+        width: 950px;
+        height: 350px;
+    }
+
+    #imagem{
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+
+    #formulario{
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+}
